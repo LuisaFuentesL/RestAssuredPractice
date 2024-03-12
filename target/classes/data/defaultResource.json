@@ -1,0 +1,9 @@
+{
+  "name": "Laptop Pro",
+  "trademark": "ElectroTech",
+  "stock": 750,
+  "price": 1489.99,
+  "description": "A powerful and sleek laptop with the latest hardware for enhanced performance and productivity.",
+  "tags": "Technology, Electronics, Smartphone",
+  "active": false
+}

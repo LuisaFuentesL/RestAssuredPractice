@@ -1,0 +1,35 @@
+
+@active @smoke
+Scenario: Create a new client                                       # src/test/resources/features/client_testing_crud.feature:5
+  Given I have a client with the following details:                 # com.testing.api.stepDefinitions.ClientSteps.iHaveAClientWithTheFollowingDetails(io.cucumber.datatable.DataTable)
+    | Name  | LastName | Country  | City   | Email           | Phone         |
+    | Luisa | Fuentes  | Colombia | Bogotá | luisa@email.com | 316-74-56-020 |
+  When I send a POST request to create a client                     # com.testing.api.stepDefinitions.ClientSteps.iSendAPOSTRequestToCreateAClient()
+  Then the response should have a status code of 201 for the client # com.testing.api.stepDefinitions.ClientSteps.theResponseShouldHaveAStatusCodeForTheClient(int)
+  And the response should include the details of the created client # com.testing.api.stepDefinitions.ClientSteps.theResponseShouldIncludeTheDetailsOfTheCreatedClient()
+  And validates the response with client JSON schema for the client # com.testing.api.stepDefinitions.ClientSteps.userValidatesResponseWithClientJSONSchemaForTheClient()
+
+@active @smoke
+Scenario: View all the clients                                            # src/test/resources/features/client_testing_crud.feature:15
+  Given there are at least 3 registered clients in the system             # com.testing.api.stepDefinitions.ClientSteps.thereAreRegisteredClientsInTheSystem()
+  When I send a GET request to view all the clients                       # com.testing.api.stepDefinitions.ClientSteps.iSendAGETRequestToViewAllTheClients()
+  Then the response should have a status code of 200 for the client       # com.testing.api.stepDefinitions.ClientSteps.theResponseShouldHaveAStatusCodeForTheClient(int)
+  And validates the response with client list JSON schema for the clients # com.testing.api.stepDefinitions.ClientSteps.userValidatesResponseWithClientListJSONSchema()
+
+@active @smoke
+Scenario: View all the resources                                              # src/test/resources/features/resource_testing_crud.feature:5
+  Given there are at least 5 registered resources in the system               # com.testing.api.stepDefinitions.ResourceSteps.thereAreRegisteredResourcesInTheSystem()
+  When I send a GET request to view all the resources                         # com.testing.api.stepDefinitions.ResourceSteps.iSendAGETRequestToViewAllTheResources()
+  Then the response should have a status code of 200 for the resource         # com.testing.api.stepDefinitions.ResourceSteps.theResponseShouldHaveAStatusCodeForTheResource(int)
+  And validates the response with resource list JSON schema for the resources # com.testing.api.stepDefinitions.ResourceSteps.userValidatesResponseWithResourceListJSONSchemaForTheResource()
+
+@active @smoke
+Scenario: Update the last resource                                      # src/test/resources/features/resource_testing_crud.feature:12
+  Given there are at least 5 registered resources in the system         # com.testing.api.stepDefinitions.ResourceSteps.thereAreRegisteredResourcesInTheSystem()
+  And I retrieve the details of the latest resource                     # com.testing.api.stepDefinitions.ResourceSteps.sendGETRequest()
+  When I send a PUT request to update the latest resource               # com.testing.api.stepDefinitions.ResourceSteps.iSendAPUTRequestToUpdateTheLatestResource(java.lang.String)
+  Then the response should have a status code of 200 for the resource   # com.testing.api.stepDefinitions.ResourceSteps.theResponseShouldHaveAStatusCodeForTheResource(int)
+  And the response should have the following details:                   # com.testing.api.stepDefinitions.ResourceSteps.theResponseShouldHaveTheFollowingDetails(io.cucumber.datatable.DataTable)
+    | name         | trademark | stock | price  | description                                                                         | tags                                | active |
+    | Smartphone X | TechCo    | 500   | 599.99 | The latest model of smartphone with advanced features and a high-resolution camera. | Technology, Electronics, Smartphone | true   |
+  And validates the response with resource JSON schema for the resource # com.testing.api.stepDefinitions.ResourceSteps.userValidatesResponseWithResourceJSONSchema()
