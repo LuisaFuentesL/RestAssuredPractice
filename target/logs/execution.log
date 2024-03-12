@@ -16166,3 +16166,174 @@
 2024-03-11 16:08:44.161 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
 2024-03-11 16:08:44.162 INFO [api.stepDefinitions.Hooks:25] - 	Scenario finished: Update the last resource
 2024-03-11 16:08:44.162 INFO [api.stepDefinitions.Hooks:26] - *****************************************************************************************
+2024-03-11 19:28:39.526 INFO [api.stepDefinitions.Hooks:16] - *****************************************************************************************
+2024-03-11 19:28:39.533 INFO [api.stepDefinitions.Hooks:17] - 	Scenario: View all the clients
+2024-03-11 19:28:39.534 INFO [api.stepDefinitions.Hooks:18] - *****************************************************************************************
+2024-03-11 19:28:42.573 INFO [api.stepDefinitions.ClientSteps:42] - [
+    {
+        "name": "amara",
+        "lastName": "lalis",
+        "country": "ciudad de panama",
+        "city": "panama",
+        "email": "lalis@gmail.com",
+        "phone": "1234342",
+        "id": "1"
+    },
+    {
+        "name": "Jett",
+        "lastName": "Lueilwitz",
+        "country": "Zambia",
+        "city": "Missouri City",
+        "email": "Isac.Ebert@gmail.com",
+        "phone": "(922) 745-4800 x1365",
+        "id": "2"
+    },
+    {
+        "name": "Demarco",
+        "lastName": "Larson",
+        "country": "Croatia",
+        "city": "Eastvale",
+        "email": "Sarah_Hagenes63@gmail.com",
+        "phone": "251-877-8741 x35818",
+        "id": "3"
+    },
+    {
+        "name": "Pedro",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "4"
+    },
+    {
+        "name": "Josiane",
+        "lastName": "Graham",
+        "country": "Oman",
+        "city": "Milford",
+        "email": "Kris59@hotmail.com",
+        "phone": "920-869-2889",
+        "id": "5"
+    },
+    {
+        "name": "Santiago",
+        "lastName": "Suarez",
+        "country": "Colombia",
+        "city": "Catatumbo",
+        "email": "sanLoc@email.com",
+        "phone": "0987654321",
+        "id": "6"
+    },
+    {
+        "name": "Pedro",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "7"
+    },
+    {
+        "name": "John",
+        "lastName": "Doe",
+        "country": "USA",
+        "city": "New York",
+        "email": "MrNobody@gmail.com",
+        "phone": "3032457543",
+        "id": "8"
+    },
+    {
+        "name": "Maria",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "9"
+    },
+    {
+        "name": "Santiago",
+        "lastName": "Suarez",
+        "country": "Colombia",
+        "city": "Catatumbo",
+        "email": "sanLoc@email.com",
+        "phone": "0987654321",
+        "id": "10"
+    },
+    {
+        "name": "Luisa",
+        "lastName": "Fuentes",
+        "country": "Colombia",
+        "city": "Bogotá",
+        "email": "luisa@email.com",
+        "phone": "316-74-56-020",
+        "id": "11"
+    },
+    {
+        "name": "Luisa",
+        "lastName": "Fuentes",
+        "country": "Colombia",
+        "city": "Bogotá",
+        "email": "luisa@email.com",
+        "phone": "316-74-56-020",
+        "id": "12"
+    },
+    {
+        "name": "Maria",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "19"
+    },
+    {
+        "name": "Maria",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "25"
+    },
+    {
+        "name": "Maria",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "26"
+    },
+    {
+        "name": "Maria",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "27"
+    },
+    {
+        "name": "Maria",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "28"
+    },
+    {
+        "name": "Maria",
+        "lastName": "Picapiedra",
+        "country": "Nunca Jamas",
+        "city": "Narnia",
+        "email": "pedro@gmail.com",
+        "phone": "123-456-7890",
+        "id": "29"
+    }
+]
+2024-03-11 19:28:43.063 INFO [api.stepDefinitions.ClientSteps:54] - There are more than 3 registered clients in the system
+2024-03-11 19:28:43.868 INFO [api.stepDefinitions.Hooks:24] - *****************************************************************************************
+2024-03-11 19:28:43.868 INFO [api.stepDefinitions.Hooks:25] - 	Scenario finished: View all the clients
+2024-03-11 19:28:43.869 INFO [api.stepDefinitions.Hooks:26] - *****************************************************************************************
