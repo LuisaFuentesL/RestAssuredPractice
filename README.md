@@ -33,13 +33,16 @@ The project structure is organized as follows:
 restassured-practice
 |-- src
 |   |-- main
-|   |   `-- java
-|   |       `-- com
+|       |-- java
+|           `-- com
 |               `-- testing
 |                    `-- api
-|                       |-- models
-|                       |-- request
-|                       `-- utils
+|                        |-- models
+|                        |-- request
+|                        `-- utils
+|       |-- resources
+|           `-- data
+|
 |   |-- test
 |       |-- java
 |           `-- com
@@ -47,6 +50,13 @@ restassured-practice
 |                    `-- api
 |                       |-- runner
 |                       `-- stepDefinitions
+|       |-- resources
+|           |-- features
+|           `-- schemas
+|               |-- client
+|               |-- resource
+|               `-- log4j2.properties
+|-- target
 |-- pom.xml
 |-- .gitignore
 |-- README.md
